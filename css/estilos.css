@@ -1,0 +1,379 @@
+/*FORMATEADOR */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+    min-height: 100vh;
+}
+
+header,
+section,
+main,
+nav,
+footer,
+article,
+figure,
+hgroup {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    transition: .4s all ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    align-self: flex-end;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    color: #4E73DF;
+}
+
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+    color: grey;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.img-responsive {
+    max-width: 100%;
+    width: 100%;
+}
+
+/*MIS ESTILOS*/
+/*TITULOS / TEXTOS*/
+h3{
+    margin: 10px;
+    color: #3232dc;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    margin-top: 2%;
+    color: #3232dc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+}
+/*HEADER*/
+#main-menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: cadetblue;
+    top: 0;
+    left: 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dropdown{
+    display: none;
+}
+.items{
+    margin: 0 30px;
+}
+.items a{
+    color: white;
+}
+.items:last-child {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: brown;
+}
+.items:last-child:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+.banner img{
+    width: 100%;
+}
+/*SERVICIOS*/
+.servicios {
+    display: flex;
+    margin: 2% 4%;
+}
+article.box-servicio {
+    background-color: #a09d9d;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 3%;
+    border: 1px solid;
+}
+.box-servicio:nth-child(1) {
+    background-color: #57DADE;
+}
+.box-servicio:nth-child(2) {
+    background-color: #6DF5D4;
+}
+.box-servicio:nth-child(3) {
+    background-color: #57DADE;
+}
+.box-servicio:nth-child(4) {
+    background-color: #6DF5D4;
+}
+article.box-servicio:hover {
+    transform: scale(1.05);
+    transition: all ease 0.7s;
+}
+article.box-servicio p {
+    color: #676565;
+}
+/*QUESTION*/
+.question-page{
+    display: flex;
+    background-color: #ececec;
+    padding: 3%;
+}
+.question{
+    width: 50%;
+}
+.question p{
+    margin: 10px 50px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+.video-page{
+    width: 50%;
+}
+.video-page video{
+    width: 100%;
+}
+/*FORMULARIO*/
+.cotizar-page{
+    padding: 2%;
+    display: flex;
+}
+.divmapa{
+    width: 50%;
+}
+.divmapa iframe{
+    width: 90%;
+    height: 90%;
+}
+.divform{
+    width: 50%;
+}
+.input-field {
+    margin: 10px;
+    border-radius: 7px;
+
+}
+.input-form, .select-form {
+    height: 26px;
+    width: 50%;
+}
+.select{
+    width: 50%;
+    height: 26px;
+}
+.textarea {
+    width: 50%;
+    height: 110px;
+}
+.input-form, .select-form,.select,.textarea{
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+.btn-enviar{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    width: 15%;
+    font-size: 17px;
+}
+.btn-enviar:hover{
+    transform: rotateX(358deg);
+    transition: all ease 0.5s;
+}
+.footer{
+    background-color: rgb(69, 69, 69);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alert{
+    color: red;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+/*PAGE NOSOTROS*/
+.titnos{
+    position: absolute;
+    margin-top: -7%;
+    left: 10%;
+    font-size: 45px;
+    color: white;
+}
+.descnosotros {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+}
+.descnosotros div{
+    border: 6px dotted gray;
+    margin: 10px;
+    padding: 1%;
+}
+.descnosotros div:hover{
+    border: 6px dotted #3232dc;
+}
+.descnosotros p {
+    margin: 10px 40px;
+}
+.contacto {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 3%;
+}
+.contacto img {
+    width: 60%;
+}
+.contacto img:hover{
+    transform: rotateY(180deg);
+}
+.divdatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.divdatos p {
+    margin: 15px;
+}
+.divmap iframe{
+    width: 100%;
+    height: 300px;
+}
+/*MOBILE*/
+@media (max-width:600px) {
+    /*HEADER*/
+    header{
+        width: 100%;
+    }
+    .main-menu{
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+    /*MENU DESPLEGABLE*/
+    .mainmenubtn {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+        padding:20px;
+        margin-top:20px;
+        border-radius: 50px;
+    }
+    .mainmenubtn:hover {
+        background-color: brown;
+        }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-child {
+        display: none;
+        min-width: 200px;
+        list-style: none;
+    }
+    .dropdown-child a {
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown:hover .dropdown-child {
+        display: block;
+    }
+    .items{
+        margin: 0%;
+    }
+    .items:last-child{
+        padding: 5px;
+    }
+    /*FIN MENU*/
+    /*SERVICIOS*/
+    .servicios{
+        flex-wrap: wrap;
+    }
+    /*QUESTION*/
+    .question-page{
+        flex-direction: column;
+    }
+    .question{
+        width: 100%;
+    }
+    .video-page{
+        width: 100%;
+    }
+    /*COTIZAR*/
+    .cotizar-page{
+        width: 100%;
+        flex-direction: column;
+    }
+    .divmapa{
+        width: 100%;
+    }
+    .divform{
+        width: 100%;
+    }
+    .btn-enviar {
+        width: 25%;
+    }
+    /*PAGE NOSOTROS*/
+    .titnos{
+        display: none;
+    }
+    .descnosotros div {
+        overflow: scroll;
+        max-height: 300px;
+    }
+    .divdatos p{
+        margin: 5px;
+    }
+}

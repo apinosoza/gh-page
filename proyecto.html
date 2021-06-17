@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Proyecto Final</title>
+    <script src="js/proyecto.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="main-menu">
+            <a href=""><img src="images/logo.png" alt=""></a>
+            <ul class="menu">
+                <li class="items"><a href="#inicio">Inicio</a></li>
+                <li class="items"><a href="nosotros.html">Nosotros</a></li>
+                <li class="items"><a href="#servicios">Servicios</a></li>
+                <li class="items"><a href="#cotizar">Cotizar</a></li>
+            </ul>
+
+            <div class="dropdown">
+                <button class="mainmenubtn">| | |</button>
+                <div class="dropdown-child">
+                    <li class="items"><a href="#inicio">Inicio</a></li>
+                    <li class="items"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="items"><a href="#servicios">Servicios</a></li>
+                    <li class="items"><a href="#cotizar">Cotizar</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner" id="inicio">
+            <a href=""><img src="images/banner.jpg" alt=""></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="servicios-page" id="servicios">
+            <h1>NUESTROS SERVICIOS</h1>
+            <div class="servicios">
+                <article class="box-servicio">
+                    <img class="img-box" src="images/dpf-off.png" alt="">
+                    <h3>DPF</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+                </article>
+                <article class="box-servicio">
+                    <img class="img-box" src="images/egr-off.png" alt="">
+                    <h3>EGR</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+                </article>
+                <article class="box-servicio">
+                    <img class="img-box" src="images/odometro.png" alt="">
+                    <h3>Odómetro</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+                </article>
+                <article class="box-servicio">
+                    <img class="img-box" src="images/check.png" alt="">
+                    <h3>Scanner</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+                </article>
+            </div>
+        </section>
+        <section class="question-page">
+            <article class="question">
+                <h3>¿Qué es el filtro de partículas?</h3>
+                <p>También conocido como FAP o DPF- es un dispositivo ubicado en el tubo de escape que se encarga de
+                    retener todas las partículas sólidas generadas por los motores diésel. Una vez que el filtro está
+                    “lleno” o saturado de esas partículas, él mismo se encarga de incinerarlas, reduciendo así el nivel
+                    de emisiones contaminantes. Este proceso se conoce como regeneración.</p>
+                <p>Los DPF son cada vez más comunes en los vehículos que transitan hoy en día, debido a los últimos
+                    cambios en las regulaciones de emisiones de gases. Al entrar en vigencia las normas Euro V, los
+                    filtros de partículas, en los tubos de escape de automóviles diésel son ahora tan comunes como los
+                    convertidores catalíticos de los automóviles de gasolina.</p>
+                <p>Existe gran evidencia, que los sistemas actuales de regeneración que incluyen los vehículos no son
+                    capaces de realizar su función. En Europa, son cada vez más y más las llamadas de los conductores,
+                    con respecto a la luz “DPF” encendida en el tablero del vehículo que indica una obstrucción del
+                    filtro, sin saber lo que es o lo que debe hacer al respecto.</p>
+            </article>
+            <article class="video-page">
+                <video src="https://www.youtube.com/watch?v=q4GbQgeY4Dw" controls autoplay muted></video>
+            </article>
+        </section>
+        <section class="cotizar-page" id="cotizar">
+            <div class="divmapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7949.723468721288!2d-71.65493323860647!3d-35.428872138742804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x9665c6ba36e0bcef%3A0x409fe09dcc99ae46!2sAv.%20Salvador%20Allende%20802-900%2C%20Talca%2C%20Maule!3m2!1d-35.4312651!2d-71.65061659999999!5e0!3m2!1ses-419!2scl!4v1623893387686!5m2!1ses-419!2scl" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="divform">
+                <h1>¡VEN Y COTIZA!</h1>
+                <form action="" class="form-page" method="post">
+                    <div class="input-field">
+                        <input class="input-form" type="text" id="nombre" required autocomplete="on"
+                            placeholder="Ingresa tu nombre">
+                        <p id="alertNombre" class="alert"></p>
+                    </div>
+                    <div class="input-field">
+                        <input class="input-form" type="email" id="email" required autocomplete="on"
+                            placeholder="Ingresa tu correo">
+                        <p id="alertCorreo" class="alert"></p>
+                    </div>
+                    <div class="input-field">
+                        <input class="input-form" type="number" id="telefono" required autocomplete="on"
+                            placeholder="Ingresa tu teléfono">
+                        <p id="alertTel" class="alert"></p>
+                    </div>
+                    <div class="input-field">
+                        <select class="select" required id="selector">
+                            <option value="0">Seleccione una opción</option>
+                            <option value="DPF">DPF</option>
+                            <option value="EGR">EGR</option>
+                            <option value="Odómetro">Odómetro</option>
+                            <option value="Scanner">Scanner</option>
+                        </select>
+                        <p id="alertSelect" class="alert"></p>
+                    </div>
+                    <div class="input-field">
+                        <textarea class="textarea" id="txtarea" placeholder="¿Tienes alguna consulta? (Opcional)" maxlength="150"></textarea>
+                        <p id="alertMsj" class="alert"></p>
+                    </div>
+                    <button class="btn-enviar" type="submit" value="submit" onclick="validaInfo()">Cotizar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados ©</p>
+    </footer>
+
+</body>
+
+</html>
